@@ -1,0 +1,22 @@
+<a href="#" class="group inline-block">
+  <div class="bg-gradient-to-r from-[#8B5CEF] to-[#FE7676] p-[1px] rounded-full transition duration-300">
+    <div class="bg-white group-hover:bg-gradient-to-r group-hover:from-[#8B5CEF] group-hover:to-[#FE7676] w-[30px] h-[30px] flex items-center justify-center rounded-full transition duration-300">
+      
+      <!-- INLINE SVG STARTS HERE -->
+      <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 50 50" fill="none">
+        <defs>
+          <linearGradient id="icon-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#8B5CEF" />
+            <stop offset="100%" stop-color="#FE7676" />
+          </linearGradient>
+        </defs>
+        <path
+          d="M30.8666 14.3335H27.6666C26.2521 14.3335 24.8956 14.8954 23.8954 15.8956C22.8952 16.8958 22.3333 18.2523 22.3333 19.6668V22.8668H19.1333V27.1334H22.3333V35.6667H26.5999V27.1334H29.7999L30.8666 22.8668H26.5999V19.6668C26.5999 19.3839 26.7123 19.1126 26.9123 18.9126C27.1124 18.7125 27.3837 18.6001 27.6666 18.6001H30.8666V14.3335Z"
+          fill="url(#icon-gradient)"
+          class="transition duration-300 group-hover:fill-white" />
+      </svg>
+      <!-- INLINE SVG ENDS HERE -->
+
+    </div>
+  </div>
+</a>
