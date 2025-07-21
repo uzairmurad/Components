@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Carousel</title>
+  <link rel="stylesheet" href="./dist/output.css">
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <style>
+    .carousel-container {
+      overflow: hidden;
+      position: relative;
+    }
+    .carousel-track {
+      display: flex;
+      transition: transform 0.5s ease-in-out;
+      padding-left: 20%;
+    }
+    .carousel-slide {
+      flex: 0 0 70%;
+      margin: 0 10px;
+      transform: scale(0.9);
+      transition: transform 0.5s;
+    }
+    .carousel-slide.active {
+      transform: scale(1);
+      z-index: 10;
+    }
+    .carousel-text {
+      display: none;
+    }
+    .carousel-slide.active .carousel-text {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  <div class="max-w-[1920px] mx-auto h-auto py-[clamp(50px,5vw,70px)]">
+    <h2 class=" text-center mb-8 text-heading-h2 ">Write A Brief Title</h2>
+
+    <!-- Carousel Wrapper -->
+    <div class="carousel-container rounded-lg">
+      <div id="carouselTrack" class="carousel-track">
+        <!-- Slides -->
+        <!-- Image 1 -->
+        <div class="carousel-slide h-[clamp(300px,50vw,500px)] relative group rounded-lg overflow-hidden">
+          <img src="./images/craig-cooper-bO39yvJ4Fxo-unsplash.jpg" class="w-full h-full object-center object-cover z-0" />
+          <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 bg-gradient-to-b from-[#2292FA]/0 to-[#303003]/60 z-index-10"></div>
+          <div class="carousel-text absolute bottom-0 w-full text-center px-[clamp(24px,5vw,160px)] pb-6 pt-12 z-index-20 text-white  ">
+            <h4 class="text-heading-h4">Add A Title</h4>
+            <p class="tracking-spacing-0 font-normal leading-height-normal md:height-loose md:text-base xl:height-extraloose xl:text-lg ">Lorem ipsum dolor sit amet consectetur adipiscing elit vehicula tellus feugiat, mi fames velit risus</p>
+          </div>
+        </div>
+        <!-- Image 2 -->
+        <div class="carousel-slide h-[clamp(300px,50vw,500px)] relative group rounded-lg overflow-hidden">
+          <img src="./images/henry-be-IicyiaPYGGI-unsplash.jpg" class="w-full h-full object-center object-cover z-0" />
+          <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 bg-gradient-to-b from-[#2292FA]/0 to-[#303030]/60 z-index-10"></div>
+          <div class="carousel-text absolute bottom-0 w-full text-center px-[clamp(24px,5vw,160px)] pb-6 pt-12 text-white z-index-20">
+            <h4 class="text-heading-h4">Add A Title</h4>
+            <p class="tracking-spacing-0 font-normal leading-height-normal md:height-loose md:text-base xl:height-extraloose xl:text-lg">Lorem ipsum dolor sit amet consectetur adipiscing elit vehicula tellus feugiat, mi fames velit risus</p>
+          </div>
+        </div>
+        <!-- Image 3 -->
+        <div class="carousel-slide h-[clamp(300px,50vw,500px)] relative group rounded-lg overflow-hidden">
+          <img src="./images/pexels-kampus-production-6542382.jpg" class="w-full h-full object-center object-cover z-0" />
+          <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 bg-gradient-to-b from-[#2292FA]/0 to-[#303030]/60 z-index-10"></div>
+          <div class="carousel-text absolute bottom-0 w-full text-center px-[clamp(24px,5vw,160px)] pb-6 pt-12 text-white z-index-20">
+            <h4 class="text-heading-h4">Add A Title</h4>
+            <p class="tracking-spacing-0 font-normal leading-height-normal md:height-loose md:text-base xl:height-extraloose xl:text-lg">Lorem ipsum dolor sit amet consectetur adipiscing elit vehicula tellus feugiat, mi fames velit risus</p>
+          </div>
+        </div>
+        <!-- Image 4 -->
+        <div class="carousel-slide h-[clamp(300px,50vw,500px)] relative group rounded-lg overflow-hidden">
+          <img src="./images/pexels-blaque-x-264516-932638.jpg" class="w-full h-full object-center object-cover z-0" />
+          <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 bg-gradient-to-b from-[#2292FA]/0 to-[#303030]/60 z-index-10"></div>
+          <div class="carousel-text absolute bottom-0 w-full text-center px-[clamp(24px,5vw,160px)] pb-6 pt-12 text-white z-index-20">
+            <h4 class="text-heading-h4">Add A Title</h4>
+            <p class="tracking-spacing-0 font-normal leading-height-normal md:height-loose md:text-base xl:height-extraloose xl:text-lg">Lorem ipsum dolor sit amet consectetur adipiscing elit vehicula tellus feugiat, mi fames velit risus</p>
+          </div>
+        </div>
+        <!-- Image 5 -->
+        <div class="carousel-slide h-[clamp(300px,50vw,500px)] relative group rounded-lg overflow-hidden">
+          <img src="./images/pexels-asphotograpy-1002703.jpg" class="w-full h-full object-center object-cover z-0" />
+          <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 bg-gradient-to-b from-[#2292FA]/0 to-[#303030]/60 z-index-10"></div>
+          <div class="carousel-text absolute bottom-0 w-full text-center px-[clamp(24px,5vw,160px)] pb-6 pt-12 text-white z-index-20">
+            <h4 class="font-bold tracking-normal text-[clamp(26px,3.5vw,36px)] leading-[clamp(35px,4vw,48px)]">Add A Title</h4>
+            <p class="tracking-spacing-0 font-normal leading-height-normal md:height-loose md:text-base xl:height-extraloose xl:text-lg">Lorem ipsum dolor sit amet consectetur adipiscing elit vehicula tellus feugiat, mi fames velit risus</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Arrow Buttons -->
+    <div class="flex justify-center gap-6 mt-6">
+      <button onclick="moveSlide(-1)" class="btn btn-circle bg-base-200 hover:bg-base-300">
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+        </svg>
+      </button>
+      <button onclick="moveSlide(1)" class="btn btn-circle bg-base-200 hover:bg-base-300">
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+        </svg>
+      </button>
+    </div>
+  </div>
+
+  <script>
+    let currentIndex = 2;
+    const track = document.getElementById('carouselTrack');
+    const slides = track.children;
+    const totalSlides = slides.length;
+
+    function updateActiveSlide() {
+      for (let i = 0; i < slides.length; i++) {
+        slides[i].classList.remove('active');
+      }
+      slides[currentIndex].classList.add('active');
+    }
+
+    function moveSlide(direction) {
+      currentIndex = (currentIndex + direction + totalSlides) % totalSlides;
+      const slideWidth = slides[0].offsetWidth + 20;
+      track.style.transform = `translateX(-${currentIndex * slideWidth}px)`;
+      updateActiveSlide();
+    }
+
+    updateActiveSlide();
+  </script>
+</body>
+</html>
